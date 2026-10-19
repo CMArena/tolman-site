@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Tolman Labs — Behavioral Data Infrastructure</title>
+<meta name="description" content="Tolman Labs builds the behavioral data infrastructure for physical AI: human behavior captured continuously, labeled against a taxonomy that maps it to physical-AI capability." />
+<meta name="theme-color" content="#000000" />
+<meta name="color-scheme" content="dark" />
+<link rel="canonical" href="https://tolman.ai/" />
+
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Tolman Labs" />
+<meta property="og:title" content="Tolman Labs — Behavioral Data Infrastructure" />
+<meta property="og:description" content="Behavioral data infrastructure for physical AI." />
+<meta property="og:url" content="https://tolman.ai/" />
+<meta property="og:image" content="https://tolman.ai/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Tolman Labs — Behavioral Data Infrastructure" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Tolman Labs — Behavioral Data Infrastructure" />
+<meta name="twitter:description" content="Behavioral data infrastructure for physical AI." />
+<meta name="twitter:image" content="https://tolman.ai/og-image.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #000;
+    --fg: #ededed;
+    --mid: #9a9a9a;
+    --dim: #5c5c5c;
+    --rule: #1a1a1a;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-variant-ligatures: none;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 7vh 6vw 4vh;
+    animation: enter 700ms ease-out both;
+  }
+  @keyframes enter {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    body { animation: none; }
+  }
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+  }
+  header .logo {
+    width: clamp(72px, 6.5vw, 112px);
+    height: auto;
+    display: block;
+  }
+  header .mark {
+    font-size: clamp(13px, 1.1vw, 15px);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--fg);
+  }
+  main {
+    width: 100%;
+    margin: auto 0;
+    padding: 3vh 0;
+  }
+  h1 {
+    font-weight: 700;
+    font-size: clamp(40px, 7vw, 96px);
+    letter-spacing: -0.02em;
+    line-height: 0.95;
+    margin: 0 0 0.25em 0;
+    text-transform: uppercase;
+  }
+  .tagline {
+    font-weight: 500;
+    font-size: clamp(15px, 1.5vw, 21px);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--fg);
+    margin: 0 0 1.6em 0;
+    padding-bottom: 1.1em;
+    border-bottom: 1px solid var(--rule);
+    max-width: 38ch;
+  }
+  .block {
+    display: grid;
+    grid-template-columns: 4ch 1fr;
+    column-gap: 2ch;
+    max-width: 78ch;
+    margin: 0 0 1.4em 0;
+  }
+  .block .n {
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    color: var(--dim);
+    padding-top: 0.45em;
+    user-select: none;
+  }
+  .summary {
+    font-weight: 400;
+    font-size: clamp(15px, 1.2vw, 17px);
+    line-height: 1.6;
+    color: var(--fg);
+    margin: 0;
+  }
+  .block.lead .summary { color: var(--mid); }
+  @media (max-width: 560px) {
+    .block { grid-template-columns: 1fr; row-gap: 0.4em; }
+  }
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.5em 2em;
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--dim);
+  }
+  footer span { white-space: nowrap; }
+  footer a { color: var(--dim); text-decoration: none; }
+  footer a:hover { color: var(--fg); }
+  ::selection { background: #fff; color: #000; }
+</style>
+</head>
+<body>
+  <header>
+    <div class="mark">TLM // 1948</div>
+    <svg class="logo" viewBox="389 357 476 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tolman Labs mark">
+      <g fill="#F7F4EE">
+        <path d="M389 357H865V479H686V707L566 837V479H389V357Z"/>
+        <path d="M402 837L507 718V837H402Z"/>
+      </g>
+    </svg>
+  </header>
+
+  <main>
+    <h1>Tolman&nbsp;Labs</h1>
+    <p class="tagline">Behavioral Data Infrastructure</p>
+
+    <!-- EDIT THE PARAGRAPHS BELOW TO UPDATE THE SITE'S MAIN MESSAGE -->
+    <div class="block lead">
+      <span class="n">01</span>
+      <p class="summary">In 1948, Edward Tolman showed that a rat running a maze builds a map of it. Block the usual route and the rat takes a shortcut it has never run. He called this a cognitive map, and the field spent the next twenty years arguing with him. Today the same idea goes by the name world model, and every lab working on physical AI is trying to train one.</p>
+    </div>
+
+    <div class="block">
+      <span class="n">02</span>
+      <p class="summary">A world model learns from records of behavior: what an agent saw, what it did, and what happened next. For physical AI that data barely exists. Robotics labs make it by hand, one teleoperated task at a time, and it goes stale as soon as the task changes.</p>
+    </div>
+
+    <div class="block">
+      <span class="n">03</span>
+      <p class="summary">Tolman Labs builds the infrastructure that produces it continuously. We capture gameplay from consenting players across 39 titles, with the frame, the input, and the game state kept in sync. We label it against a taxonomy that maps human behavior to physical-AI capability, and every clip ships with a provenance record. Our customers are the labs, the defense primes, and the sovereigns training physical AI. We supply them. We do not compete with them.</p>
+    </div>
+  </main>
+
+  <footer>
+    <span>&copy; 2026 Tolman Labs &middot; Est. 2025</span>
+    <span>San Francisco</span>
+  </footer>
+</body>
+</html>
